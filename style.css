@@ -1,0 +1,261 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(220, 230, 134);
+    padding: 10px;
+    height: 50px;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--maim-color);
+    font-weight:600;
+    cursor: default;
+    margin-right: auto;
+    }
+    
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:'Bitter', serif;
+    
+}
+
+
+nav ul:hover li{
+  cursor: pointer;
+}
+nav ul.slide{
+  left: 0;
+  transition: 2s;
+}
+
+
+/*section home*/
+
+section{
+    padding: 100px;
+}
+
+.home{
+    background:rgb(167, 167, 167);
+    height: 600px;
+}
+
+.zoom {
+    padding: 0px;
+    transition: transform .5s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .zoom:hover {
+ 
+    transform: scale(1.1    ); 
+  }
+  .home-content p{
+    font-size: 1.5rem;
+    width: 500px;
+    margin-bottom: 20px;
+    color: rgb(84, 84, 84);
+    margin-top: -70px;
+}   
+
+
+.home-content h2{
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+
+
+.home-content .socialmedia img{
+    
+ height: 30px;
+ width: 30px;
+ border-radius: 50px;
+ transition: transform .10s; /* Animation */
+
+}
+.home-content .socialmedia a:hover{
+    transform: scale(1.1); 
+}
+
+.btn{
+    
+    display:inline-block;
+    padding:1.2rem 2.8rem;
+    background-color: rgb(113, 112, 112);
+    border-radius: .6rem;
+    box-shadow: 0.2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+.btn:hover{
+    background-color: aliceblue;
+    color: var(--maim-color);
+    border-color: var(--maim-color);
+}
+
+
+/*section about*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.about-image img{
+    height:500px;
+    width:500px;
+}
+.heading{
+    margin-bottom: 40px;
+    font-size:4.5rem;
+    text-align: center;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2rem ;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin:2rem 0 3rem;
+
+}
+.about-content li{
+    font-size: 1.6rem;
+    color: rgb(83, 82, 82) ;
+}
+
+ 
+
+section a{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.pro{
+    margin-bottom: 30px;
+}
+
+.pro h3{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px){
+    section{
+        padding: 30px;
+    }
+}
+    
+
+
+
+
+
+h1{
+    font-size: 3rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: grey;
+    margin: 10px 0;
+    padding: 20px;
+    height: 90%;
+}
+
+.project {
+    text-align: center;
+}
+
+.project img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+
+
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin:.7rem 0;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    background:white;
+}
+.contact form .input-box input{
+    width: 29%;
+}
+.contact form textarea{
+    height: 40px;
+    resize:vertical;
+}
+.contact form .btn{
+    margin-top:2rem;
+    cursor: pointer;
+}
+
+
+
+ 
